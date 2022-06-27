@@ -47,7 +47,9 @@ library
     , http-types
     , lens
     , lucid
+    , monad-loops
     , mtl
+    , network
     , raw-strings-qq
     , scotty
     , stm
@@ -69,6 +71,7 @@ executable juniper-exe
       Page.Focus
       Page.Signup
       Page.Todo
+      Sockets
       Paths_juniper
   hs-source-dirs:
       example
@@ -85,7 +88,9 @@ executable juniper-exe
     , juniper
     , lens
     , lucid
+    , monad-loops
     , mtl
+    , network
     , raw-strings-qq
     , record-dot-preprocessor
     , record-hasfield
@@ -120,7 +125,9 @@ test-suite juniper-test
     , juniper
     , lens
     , lucid
+    , monad-loops
     , mtl
+    , network
     , raw-strings-qq
     , scotty
     , stm
